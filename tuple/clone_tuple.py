@@ -2,7 +2,7 @@
 4. Write a Python program to create the clone of a tuple.
 """
 
-tuple = ("bridgelab","baglore")
+tuple1 = ("bridgelab", "banglore")
 
-new_tuple = tuple
+new_tuple = tuple1
 print(new_tuple)
