@@ -3,41 +3,41 @@
 """
 
 
-def sort_dictionary_ascending(dict):
+def sort_dictionary_ascending(given_dict):
     flag = True
-    list = []
-    minx = 0
-    while(len(dict)!=1):
+    new_list = []
+    minimum = 0
+    while len(given_dict) != 1:
         flag = True
-        for x,y in dict.items():
+        for x,y in given_dict.items():
             if flag:
-                minx = x
+                minimum = x
                 flag = False
-            elif minx>x:
-                minx =x;
-        list.append(minx)
-        dict.pop(minx)
-    minx,value= dict.popitem()
-    list.append(minx)
-    print(list)
+            elif minimum > x:
+                minimum = x
+        new_list.append(minimum)
+        given_dict.pop(minimum)
+    minimum, value = given_dict.popitem()
+    new_list.append(minimum)
+    print(new_list)
 
 
 def sort_dictionary_descending(dict):
     flag = True
     list = []
-    maxx = 0
-    while(len(dict)!=1):
+    maximum = 0
+    while len(dict) != 1:
         flag = True
         for x,y in dict.items():
             if flag:
-                maxx = x
+                maximum = x
                 flag = False
-            elif maxx < x:
-                maxx = x
-        list.append(maxx)
-        dict.pop(maxx)
-    maxx,value= dict.popitem()
-    list.append(maxx)
+            elif maximum < x:
+                maximum = x
+        list.append(maximum)
+        dict.pop(maximum)
+    maximum, value = dict.popitem()
+    list.append(maximum)
     print(list)
 
 
