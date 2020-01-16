@@ -22,4 +22,4 @@ def count_substring(given_str, substr):
 word = "issidhuisilansis"
 print(word)
 substring = "is"
-count_substring(word,substring)
+count_substring(word, substring)
