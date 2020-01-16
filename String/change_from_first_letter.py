@@ -1,24 +1,26 @@
 """
 3. Write a Python program to get a string from a given string where all occurrences of its first char have been changed to '$', except the first char itself.
-	Sample String : 'restart'
-	Expected Result : 'resta$t'
+Sample String : 'restart'
+Expected Result : 'resta$t'
 """
-def find_replace_first(str,str2):
+
+
+def find_replace_first(given_word1, given_word2):
     flag = True
     new_word = ""
-    for x in str:
+    for x in given_word1:
         if flag:
-            char = x
+            c = x
             flag = False
             new_word += x
         else:
-            if char == x:
-                new_word += str2
+            if c == x:
+                new_word += given_word2
             else:
-                new_word +=x
+                new_word += x
     print(new_word)
 
 
 word = "siddhesharunsalvissssssssssss"
-char ='$'
-find_replace_first(word,char)
+c = '$'
+find_replace_first(word, c)
