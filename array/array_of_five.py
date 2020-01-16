@@ -3,12 +3,12 @@
 Access individual element through indexes.
 """
 
-arr =[]
-for i in range(0,5):
-    print("Enter a numbe for location ",i+1,": ")
+arr = []
+for i in range(0, 5):
+    print("Enter a number for location ", i + 1, ": ")
     num = int(input())
     arr.append(num)
-for i in range(0,len(arr)):
+for i in range(0, len(arr)):
     num = arr[i]
     print(num)
 
