@@ -3,6 +3,6 @@
 """
 
 Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
-print("before clearing : ",Days)
+print("before clearing : ", Days)
 Days.clear()
-print("after clearing : ",Days)
+print("after clearing : ", Days)
