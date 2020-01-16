@@ -1,6 +1,8 @@
 """
 6. Write a Python script that takes input from the user and displays that input back in upper and lower cases.
 """
+
+
 def convert_case(word):
     new_word = ""
     new_word2 = ""
@@ -13,5 +15,7 @@ def convert_case(word):
     for x in new_word:
         new_word2 += chr(ord(x)-32)
     print("Upper case :",new_word2)
-word = input("enter any word : ")
-convert_case(word)
+
+
+word1 = input("enter any word : ")
+convert_case(word1)
