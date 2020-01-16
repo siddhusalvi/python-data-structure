@@ -1,19 +1,23 @@
 """
 4. Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.
-	Sample String : 'abc'
-	Expected Result : 'abcing'
-	Sample String : 'string'
-	Expected Result : 'stringly'
+Sample String : 'abc'
+Expected Result : 'abcing'
+Sample String : 'string'
+Expected Result : 'stringly'
 """
-def add_ing(str):
+
+
+def add_ing(given_word):
     count = 0
-    for x in str:
+    for x in given_word:
         count += 1
-    if count <3:
+    if count < 3:
         return -1
-    if str[count-3:] == 'ing':
-        return str + 'ly'
-    return str + "ing"
+    if given_word[count - 3:] == 'ing':
+        return given_word + 'ly'
+    return given_word + "ing"
+
+
 word1 = "abc"
 word2 = "string"
 
